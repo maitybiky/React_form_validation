@@ -64,7 +64,7 @@ function prto(prm) {
     }
   };
   //
-  this.isSpaced = function () {
+  this.isEmty = function () {
     if (prm.trim().length === 0) return true;
     else return false;
   };
