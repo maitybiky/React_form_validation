@@ -155,7 +155,7 @@ function Password_Proto(prm) {
       val.score += 25;
       val.msg = val.msg.filter((it) => it !== msgs[3]);
     }
-    console.log(val);
+   return val
   };
 }
 const justify = (prm) => {
