@@ -2,6 +2,13 @@
 
 justify your data before form submit
 
+## Features
+
+- Password power meter
+- Number Validation
+- Object Validation
+- User_Name Validation
+
 ## Installation
 
 Install my-project with npm
