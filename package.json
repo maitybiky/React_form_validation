@@ -1,6 +1,6 @@
 {
   "name": "before-submit",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "data checker  for react form validation",
   "main": "index.js",
   "files": [
