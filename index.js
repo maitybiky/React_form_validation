@@ -158,7 +158,6 @@ function Password_Proto(prm) {
     console.log(val);
   };
 }
-
 const justify = (prm) => {
   return new prto(prm);
 };
