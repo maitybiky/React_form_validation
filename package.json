@@ -1,0 +1,23 @@
+{
+  "name": "before-submit",
+  "version": "1.0.0",
+  "description": "data checker  for react form validation",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "justify.d.ts"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maitybiky/React_form_validation.git"
+  },
+  "author": "surajit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maitybiky/React_form_validation/issues"
+  },
+  "homepage": "https://github.com/maitybiky/React_form_validation#readme"
+}

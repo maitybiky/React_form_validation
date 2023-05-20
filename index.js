@@ -2,7 +2,7 @@ function prto(prm) {
   if (typeof prm === "string") {
     if (prm.length !== prm.trim().length) {
       console.warn(
-        "JOL : " +
+        "JUSTIFY : " +
           prm +
           " contains space. use trim() method to remove extra space"
       );
@@ -11,7 +11,7 @@ function prto(prm) {
   this.isAnyBlank = function () {
     let arr = Object.entries(prm);
     if (arr.length === 0 || typeof prm === "string") {
-      console.error("JOL :Object has 0 entry");
+      console.error("JUSTIFY :Object has 0 entry");
     } else {
       let valid = arr.find(
         (it) => typeof it[1] === "string" && it[1].trim() === ""
@@ -19,7 +19,7 @@ function prto(prm) {
       if (!valid) {
         return false;
       } else {
-        console.error("JOL : " + valid[0] + " has empty value");
+        console.error("JUSTIFY : " + valid[0] + " has empty value");
         return true;
       }
     }
@@ -27,7 +27,7 @@ function prto(prm) {
   this.findBlank = function () {
     let arr = Object.entries(prm);
     if (arr.length === 0 || typeof prm === "string") {
-      console.error("JOL :Object has 0 entry");
+      console.error("JUSTIFY :Object has 0 entry");
     } else {
       let valid = arr.find(
         (it) => typeof it[1] === "string" && it[1].trim() === ""
@@ -35,7 +35,7 @@ function prto(prm) {
       if (!valid) {
         return false;
       } else {
-        console.error("JOL : " + valid[0] + " has empty value");
+        console.error("JUSTIFY : " + valid[0] + " has empty value");
         let Obj = {};
         Obj[valid[0]] = valid[1];
         return Obj;
@@ -45,7 +45,7 @@ function prto(prm) {
   this.findBlanks = function () {
     let arr = Object.entries(prm);
     if (arr.length === 0 || typeof prm === "string") {
-      console.error("JOL :Object has 0 entry");
+      console.error("JUSTIFY :Object has 0 entry");
     } else {
       let valid = arr.filter(
         (it) => typeof it[1] === "string" && it[1].trim() === ""
@@ -54,19 +54,17 @@ function prto(prm) {
         return false;
       } else {
         valid.forEach((it) => {
-          console.error("JOL : " + it[0] + " has empty value");
+          console.error("JUSTIFY : " + it[0] + " has empty value");
         });
         let arr = valid.map((it) => {
-          return it[0]
-            
-          
+          return it[0];
         });
-    return arr
+        return arr;
       }
     }
   };
   //
-  this.isBlank = function () {
+  this.isSpaced = function () {
     if (prm.trim().length === 0) return true;
     else return false;
   };
@@ -129,7 +127,7 @@ function Password_Proto(prm) {
     if (prm.length >= min_length) return true;
     else return false;
   };
-  this.strongLvl = function (prm) {
+  this.strongLvl = function () {
     const msgs = [
       "At least 1 lowercase letter",
       "At least 1 uppercase letter",
@@ -160,22 +158,8 @@ function Password_Proto(prm) {
     console.log(val);
   };
 }
-const jol = (prm) => {
+const justify = (prm) => {
   return new prto(prm);
 };
-// console.log(jol("   f ").isBlank());
-console.log(
-  jol({
-    name: "",
-    age: "",
-  }).findBlanks()
-);
-// console.log(jol(-90).Num().isNatural());
-// console.log(jol(90).Num().isNegative());
-// console.log(jol(-67).Num().toNegative())
-// console.log(jol(90).Num().isBetween(10,89));
-// console.log(jol(90).Num().isDivisibleBy(17));
-// console.log(jol("biky@gmail.com").isEmail());
-// console.log(jol("  ").isUserName());
-// console.log(jol("biky@gmail.com").password().isMinLength(18));
-// console.log(jol("biky@gmail.com").password().strongLvl("FA6&q"));
+
+module.exports = justify;
