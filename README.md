@@ -20,3 +20,7 @@ import justify from "before-submit";
 ## Demo
 
 ![App Screenshot](https://i.ibb.co/y0BD2CM/carbon-4.png)
+
+## npmjs
+
+[before-submit](https://www.npmjs.com/package/before-submit)
