@@ -26,7 +26,7 @@ import justify from "before-submit";
 
 ## Demo
 
-![App Screenshot](https://i.ibb.co/y0BD2CM/carbon-4.png)
+![App Screenshot](https://i.ibb.co/CP2QCBB/carbon-5.png)
 
 ## npmjs
 
