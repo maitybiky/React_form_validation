@@ -26,8 +26,8 @@ import justify from "before-submit";
 
 ## Demo
 
+```javascript
                 ****input data*****
-
 console.log(justify("biky@gmail.com").isEmail()); //true
 console.log(justify("bikygmail.com").isEmail()); //false
 console.log(justify("biky maity").isUserName()); //false
@@ -37,12 +37,14 @@ console.log(justify("").isSpaced()) // true
 console.log(justify("foo").isSpaced()) // false
 console.log(justify(" foo ").isSpaced()) // false
 
+
+
                  *****justify Password******
 
 console.log(justify("abcd123").password().isMinLength(8)); //false
 // Cheack Password strong level
 
-************\*\*************First Level************\*\*\*************
+**************************First Level***************************
 console.log(justify("F").password().strongLvl());
 
 Output (Object)
@@ -51,10 +53,9 @@ Output (Object)
 "At least 1 lowercase letter",
 "At least 1 number",
 "At least 1 special character" }
+******************************************************************
 
----
-
-************\*************Second level**************\***************  
+*************************Second level*****************************
 console.log(justify("Fa").password().strongLvl());
 
 Output (Object)
@@ -65,10 +66,9 @@ Output (Object)
 "At least 1 number",
 "At least 1 special character"
 }
+******************************************************************
 
----
-
-************\*************Third level**************\***************  
+*************************Third level*****************************
 console.log(justify("Fa7").password().strongLvl());
 
 Output (Object)
@@ -76,13 +76,14 @@ Output (Object)
 {"score": 75,
 "msg": [
 "At least 1 special character"}
+******************************************************************
 
----
-
-************\*************Fourth level**************\***************
+*************************Fourth level*****************************
 console.log(justify("Fa7&").password().strongLvl());
 
+
 {
+```
 
 <!-- ![App Screenshot](https://i.ibb.co/CP2QCBB/carbon-5.png) -->
 
